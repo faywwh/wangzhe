@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>王者荣耀英雄介绍</title>
+    <link rel="icon" href="./logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/hero.css" />
+    <link
+      rel="stylesheet"
+      href="//at.alicdn.com/t/font_2034542_glcp6wqoeds.css"
+    />
+  </head>
+  <body>
+    <div class="top">
+      <div class="logo">
+        <a href="./index.html" class="logo-img"
+          ><img src="//game.gtimg.cn/images/yxzj/m/m201606/cp/logo.png" alt=""
+        /></a>
+        <span>王者荣耀&nbsp;&nbsp;&nbsp;&nbsp;攻略站</span>
+      </div>
+      <div class="more">
+        <a href="./index.html">更多英雄&nbsp;<span>></span></a>
+      </div>
+    </div>
+    <div class="header-box"></div>
+    <div class="content">
+      <ul class="hero-nav">
+        <li class="li1" onclick="toggleList(event)">
+          <span class="sp1 active">英雄初识</span>
+        </li>
+        <li class="li2" onclick="toggleList(event)">
+          <span class="sp2">进阶攻略</span>
+        </li>
+      </ul>
+      <div class="slide-content">
+        <div class="content-list1 active"></div>
+        <div class="content-list2">
+          <ul class="strategy"></ul>
+          <div class="load-more">
+            <a href="">全部加载完成</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./utils/jsonp.js"></script>
+    <script src="./js/hero.js"></script>
+  </body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>王者荣耀</title>
+    <link rel="icon" href="./logo.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//at.alicdn.com/t/font_2034542_glcp6wqoeds.css"
+    />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="main-nav">
+      <ul>
+        <li><a href="./index.html" class="active">首页</a></li>
+        <li>
+          <a href="https://pvp.qq.com/m/m201706/strategycenter.shtml"
+            >攻略中心</a
+          >
+        </li>
+        <li>
+          <a href="https://pvp.qq.com/m/m201706/matchindex.shtml">赛事中心</a>
+        </li>
+      </ul>
+    </div>
+    <div class="content-wrap">
+      <div class="swiper-container">
+        <div class="swiper-wrapper"></div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="home-nav">
+        <ul class="home-nav-ul">
+          <li>
+            <a href="https://pvp.qq.com/m/m201706/coming/index.htm"
+              ><i class="iconfont icon-gongzhonghao"></i><span>爆料站</span></a
+            >
+          </li>
+          <li>
+            <a href="https://pvp.qq.com/story201904/index.html#/index"
+              ><i class="iconfont icon-gongzhonghao"></i><span>故事站</span></a
+            >
+          </li>
+          <li>
+            <a href="https://pvp.qq.com/mall/m/?biz=yxzj#/"
+              ><i class="iconfont icon-gongzhonghao"></i
+              ><span>周边商城</span></a
+            >
+          </li>
+          <li>
+            <a href="https://pvp.qq.com/cp/a20161116tyf/page01.htm"
+              ><i class="iconfont icon-gongzhonghao"></i><span>体验服</span></a
+            >
+          </li>
+          <li>
+            <a href="https://pvp.qq.com/m/m201606/goCenter.shtml"
+              ><i class="iconfont icon-gongzhonghao"></i
+              ><span>新人专区</span></a
+            >
+          </li>
+          <li>
+            <a href="https://pvp.qq.com/m/memory/index.shtml"
+              ><i class="iconfont icon-gongzhonghao"></i
+              ><span>荣耀·传承</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://image.ttwz.qq.com/wzry/wzryzs_download_4001.htm?ADTAG=mpvp.qq.com"
+              ><i class="iconfont icon-gongzhonghao"></i
+              ><span>王者营地</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://game.weixin.qq.com/cgi-bin/comm/openlink?noticeid=90102708&appid=wx95a3a4d7c627e07d&url=https%3A%2F%2Fgame.weixin.qq.com%2Fcgi-bin%2Fh5%2Fstatic%2Fsubscribe%2Findex.html%3Fappid%3Dwx95a3a4d7c627e07d#wechat_redirect"
+              ><i class="iconfont icon-gongzhonghao"></i><span>公众号</span></a
+            >
+          </li>
+          <li>
+            <a href="https://pvp.qq.com/cp/a20190320bbgxsmm/index.html"
+              ><i class="iconfont icon-gongzhonghao"></i
+              ><span>版本介绍</span></a
+            >
+          </li>
+          <li>
+            <a href="https://pvp.qq.com/cp/a20190917station/index.html"
+              ><i class="iconfont icon-gongzhonghao"></i
+              ><span>对局环境</span></a
+            >
+          </li>
+          <li>
+            <a href="https://pvp.qq.com/cp/a20190827boundlessp/index.html"
+              ><i class="iconfont icon-gongzhonghao"></i
+              ><span>无限王者团</span></a
+            >
+          </li>
+          <li>
+            <a href="https://pvp.qq.com/m/hdy/p1/index.html"
+              ><i class="iconfont icon-gongzhonghao"></i
+              ><span>创意互动营</span></a
+            >
+          </li>
+        </ul>
+        <div class="entry-btn" onclick="addClass()">
+          <span class="span iconfont icon-edit"></span>
+          <span class="home-nav-text">展开</span>
+        </div>
+      </div>
+      <div class="section">
+        <div class="title">
+          <span class="iconfont icon-edit"></span>
+          <span class="title-text">新闻资讯</span>
+          <a href="https://pvp.qq.com/m/m201706/newsList.shtml">···</a>
+        </div>
+        <div class="news-slide">
+          <ul class="news-slide-ul">
+            <li>
+              <span class="active" onclick="getNews(1760,event)">热门</span>
+            </li>
+            <li>
+              <span onclick="getNews(1761,event)">新闻</span>
+            </li>
+            <li>
+              <span onclick="getNews(1762,event)">公告</span>
+            </li>
+            <li>
+              <span onclick="getNews(1763,event)">活动</span>
+            </li>
+            <li>
+              <span onclick="getNews(1764,event)">赛事</span>
+            </li>
+          </ul>
+          <div class="content"></div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="title hero-list-title">
+          <span class="iconfont icon-edit"></span>
+          <span class="title-text">英雄列表</span>
+          <a href="https://pvp.qq.com/m/m201706/heroList.shtml">···</a>
+        </div>
+        <div class="pic-slide">
+          <a
+            href="./hero.html?id=533"
+            style="
+              background-image: url(//ossweb-img.qq.com/upload/webplat/info/yxzj/20200804/910041372175223.jpg);
+            "
+          ></a>
+        </div>
+        <div class="hero-slide">
+          <ul class="hero-slide-ul">
+            <li>
+              <span class="active" onclick="initHeros(0,event)">热门</span>
+            </li>
+            <li><span onclick="initHeros(1,event)">战士</span></li>
+            <li><span onclick="initHeros(2,event)">法师</span></li>
+            <li><span onclick="initHeros(3,event)">坦克</span></li>
+            <li><span onclick="initHeros(4,event)">刺客</span></li>
+            <li><span onclick="initHeros(5,event)">射手</span></li>
+            <li><span onclick="initHeros(6,event)">辅助</span></li>
+          </ul>
+          <div class="hero-slide-wrapper"></div>
+        </div>
+      </div>
+      <div class="section video-section">
+        <div class="title">
+          <span class="iconfont icon-edit"></span>
+          <span class="title-text">精彩视频</span>
+          <a href="https://pvp.qq.com/m/m201706/strategycenter.shtml">···</a>
+        </div>
+        <div class="video-slide">
+          <ul class="video-slide-ul">
+            <li>
+              <span
+                class="active"
+                onclick="getBoutiquePrograma('1809,1855,2609,4781,4782,4780,4646',event);"
+                >精品栏目</span
+              >
+            </li>
+            <li><span onclick="getCross(event)">英雄攻略</span></li>
+            <li>
+              <span
+                onclick="getBoutiquePrograma('1639,1852,4784,4785,4786,4787,4775',event)"
+                >赛事精品</span
+              >
+            </li>
+          </ul>
+          <div class="video-slide-wrapper"></div>
+        </div>
+      </div>
+      <div class="load-more">
+        <a href="https://pvp.qq.com/m/m201706/strategycenter.shtml"
+          >加载更多内容</a
+        >
+      </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
